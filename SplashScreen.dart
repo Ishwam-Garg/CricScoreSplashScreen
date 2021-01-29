@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:cricscore/Screens/BottomNavScreen/BottomNavScreen.dart';
 import 'package:cricscore/Screens/SignInScreen.dart';
 import 'package:google_fonts/google_fonts.dart';
+/*
+Add the packages {AutoSizeText,GoogleFonts} in the pubspec yaml file
+*/
 
 class Splash_Screen extends StatefulWidget {
   @override
@@ -65,8 +68,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   {
     Timer(
       Duration(seconds: 4),(){
-        //Navigator.of(context).push(MaterialPageRoute(builder: (context)=> BottomNavScreen()));
-        Navigator.of(context).push(MaterialPageRoute(builder: (context)=> SignInScreen()));
+       //add your route here to which the splash scrren navigates to after this time 
     }
     );
   }
